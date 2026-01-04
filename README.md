@@ -14,7 +14,6 @@ This project involves:
 3. Data Modeling: Developing fact and dimension tables optimized for analytical queries.
 4. Analytics & Reporting: Creating SQL-based reports and dashboards for actionable insights.
 
----
 ## 🛠️ Important Links & Tools
 
 **Everything is free!**
