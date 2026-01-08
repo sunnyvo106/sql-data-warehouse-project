@@ -125,5 +125,25 @@ data-warehouse-project/
 ├── .gitignore                   # Git ignored files
 └── requirements.txt             # Project requirements
 
+---
+
+---
+
+## 📄 License
+This project is licensed under the **MIT License**.  
+You are free to use, modify, and share this project with proper attribution.
+
+---
+
+## 🌟 About Me
+I’m a Business Analyst enthusiast with a strong interest in data-driven decision-making, transforming raw data into actionable insights through data modeling, SQL analytics, and clear, business-focused documentation.
+
+This project reflects my ability to:
+- Design analytical data models  
+- Clean and integrate data from multiple sources  
+- Translate business questions into SQL-based insights  
+- Communicate technical solutions in a business-friendly way  
+
+📫 Feel free to connect with me on LinkedIn or explore my other projects!
 
 
