@@ -169,27 +169,27 @@ Provides curated, analytics-ready datasets aligned with business metrics.
 ## 📁 Repository Structure
 data-warehouse-project/
 │
-├── datasets/ # Raw datasets used for the project (ERP and CRM data)
+ ├── datasets/ # Raw datasets used for the project (ERP and CRM data)
 │
-├── docs/ # Project documentation and architecture
-│ ├── etl.drawio # Draw.io diagram showing ETL process
-│ ├── data_architecture.drawio # Draw.io diagram of Medallion Architecture
-│ ├── data_catalog.md # Catalog of datasets, tables, and metadata
-│ ├── data_flow.drawio # Draw.io diagram for data flow
-│ ├── data_models.drawio # Draw.io file for data models
-│ └── naming-conventions.md # Naming conventions for schemas, tables, and columns
-│
-├── scripts/ # SQL scripts for ETL and transformations
-│ ├── bronze/ # Scripts for extracting and loading raw data
-│ ├── silver/ # Scripts for cleaning and transforming data
-│ └── gold/ # Scripts for creating analytical models
-│
-├── tests/ # Test scripts and data quality checks
-│
-├── README.md # Project overview and instructions
-├── LICENSE # License information for the repository
-├── .gitignore # Files and directories ignored by Git
-└── requirements.txt # Project dependencies and requirements
+ ├── docs/ # Project documentation and architecture
+ │ ├── etl.drawio # Draw.io diagram showing ETL process
+ │ ├── data_architecture.drawio # Draw.io diagram of Medallion Architecture
+ │ ├── data_catalog.md # Catalog of datasets, tables, and metadata
+ │ ├── data_flow.drawio # Draw.io diagram for data flow
+ │ ├── data_models.drawio # Draw.io file for data models
+ │ └── naming-conventions.md # Naming conventions for schemas, tables, and columns
+ │
+ ├── scripts/ # SQL scripts for ETL and transformations
+ │ ├── bronze/ # Scripts for extracting and loading raw data
+  │ ├── silver/ # Scripts for cleaning and transforming data
+ │ └── gold/ # Scripts for creating analytical models
+ │
+ ├── tests/ # Test scripts and data quality checks
+ │
+ ├── README.md # Project overview and instructions
+ ├── LICENSE # License information for the repository
+ ├── .gitignore # Files and directories ignored by Git
+ └── requirements.txt # Project dependencies and requirements
 
 ---
 
