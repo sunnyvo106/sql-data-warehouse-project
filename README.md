@@ -226,16 +226,7 @@ The architecture progressively refines raw source data into clean, standardized,
 
 <img width="1160" height="1050" alt="Data Flow Diagram" src="https://github.com/user-attachments/assets/72f720c7-4137-4fab-8e60-bd18d51aab5f" />
 
----
-
-## 📊 Data Consumption
-
-**Consumers**
-- BI & reporting tools  
-- Ad-hoc SQL queries  
-- Machine learning & advanced analytics  
-
-**Layer Responsibilities**
+### 🧱 Layer Responsibilities
 
 1. **Bronze Layer**  
    Stores raw data as-is from source systems. Data is ingested from CSV files into SQL Server.
@@ -283,6 +274,7 @@ data-warehouse-project/
 ├── LICENSE                      # License information
 ├── .gitignore                   # Git ignored files
 └── requirements.txt             # Project requirements
+
 
 ---
 
