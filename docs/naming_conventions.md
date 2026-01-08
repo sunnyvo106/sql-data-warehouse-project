@@ -41,39 +41,29 @@ The conventions apply to **schemas, tables, views, columns, and stored procedure
   - `<entity>`: Exact table name from the source system
   -  Example: crm_customer_info → Customer information from the CRM system.
 
-**Example**
-Customer information sourced directly from the CRM system.
-
 ---
 
 ### ⚪ Silver Layer Rules
 
-- Table names must start with the **source system name**.
-- Table names must remain consistent with the original source entities.
-- Used for cleaned, standardized, and transformed data.
-
-**Pattern**
-
-- `<sourcesystem>`: Name of the source system (e.g., `crm`, `erp`)
-- `<entity>`: Exact table name from the source system
-
-**Example**
-Cleaned and standardized customer information from the CRM system.
+- All names must start with the source system name, and table names must match their original names without renaming.
+-`<sourcesystem>_<entity>`:
+  - `<sourcesystem>`: Name of the source system (e.g., crm, erp). 
+  - `<entity>`: Exact table name from the source system
+  -  Example: crm_customer_info → Customer information from the CRM system.
 
 ---
 
 ### 🟡 Gold Layer Rules
 
-- Table names must use **business-aligned, meaningful names**.
-- Names must start with a **category prefix** describing the table’s role.
-- Designed for reporting, analytics, and business consumption.
+- All names must use meaningful, business-aligned names for tables, starting with the category prefix.
+-`<category>_<entity>`:
+  - `<category>`: Describes the role of the table, such as dim (dimension) or fact (fact table).
+  - `<entity>`: Descriptive name of the table, aligned with the business domain (e.g., customers, products, sales).
+  -  Example: crm_customer_info → Customer information from the CRM system.
+     - dim_customers → Dimension table for customer data.
+     - fact_sales → Fact table containing sales transactions.
 
-**Pattern**
 
-- `<category>`: Table role (e.g., `dim`, `fact`, `report`)
-- `<entity>`: Business-aligned entity name (e.g., customers, products, sales)
-
-**Examples**
 
 ---
 
