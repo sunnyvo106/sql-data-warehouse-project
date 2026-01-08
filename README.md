@@ -100,7 +100,7 @@ The architecture progressively refines raw source data into clean, standardized,
 
 ## 📁 Repository Structure
 
-```text
+(```)text
 data-warehouse-project/
 │
 ├── datasets/                    # Raw datasets (ERP and CRM data)
@@ -124,7 +124,7 @@ data-warehouse-project/
 ├── LICENSE                      # License information
 ├── .gitignore                   # Git ignored files
 └── requirements.txt             # Project requirements
-()
+
 ---
 
 ## 📄 License
