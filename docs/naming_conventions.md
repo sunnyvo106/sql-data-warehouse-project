@@ -82,51 +82,29 @@ The conventions apply to **schemas, tables, views, columns, and stored procedure
 ### 🔑 Surrogate Keys
 
 - All **primary keys** in dimension tables must use the suffix `_key`.
-- Surrogate keys are system-generated and do not carry business meaning.
-
-**Pattern**
-
-- `<table_name>`: Name of the table or entity
-- `_key`: Indicates a surrogate key
-
-**Example**
-Surrogate key in the `dim_customers` table.
+-`<table_name>_key`:
+  - `<table_name>`: Refers to the name of the table or entity the key belongs to.
+  - `_key`: A suffix indicating that this column is a surrogate key.
+  -  Example: customer_key → Surrogate key in the dim_customers table.
 
 ---
 
 ### ⚙️ Technical Columns
 
 - All system-generated or metadata columns must start with the prefix `dwh_`.
-- Used for auditing, tracking, and data warehouse operations only.
-
-**Pattern**
-
-- `dwh_`: Data warehouse technical prefix
-- `<column_name>`: Describes the column’s purpose
-
-**Example**
-Stores the date when the record was loaded into the data warehouse.
+-`dwh_<column_name>`:
+  - `dwh`: Prefix exclusively for system-generated metadata.
+  - `<column_name>`: Descriptive name indicating the column's purpose.
+  -  Example: dwh_load_date → System-generated column used to store the date when the record was loaded.
 
 ---
 
 ## 🧪 Stored Procedure Naming Conventions
 
 - All stored procedures used for loading data must follow a consistent naming pattern.
-- The procedure name must clearly indicate the **target layer**.
-
-**Pattern**
-
-- `<layer>`: Target layer (`bronze`, `silver`, or `gold`)
-
-**Examples**
-
----
-
-## ✅ Summary
-
-Applying these naming conventions ensures:
-- Consistent and readable database objects  
-- Clear separation of responsibilities across Bronze, Silver, and Gold layers  
-- Easier collaboration between data engineers, analysts, and stakeholders  
-- Scalable and maintainable data warehouse design  
+- `load_<layer>`:
+  - `<layer>`: Represents the layer being loaded, such as bronze, silver, or gold.
+  -  Example:
+     - load_bronze → Stored procedure for loading data into the Bronze layer.
+     - load_silver → Stored procedure for loading data into the Silver layer.
 
