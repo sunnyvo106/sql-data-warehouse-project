@@ -35,14 +35,11 @@ The conventions apply to **schemas, tables, views, columns, and stored procedure
 
 ### 🟤 Bronze Layer Rules
 
-- Table names must start with the **source system name**.
-- Table names must match the **original source table names** without renaming.
-- No business logic or transformations are applied at this layer.
-
-**Pattern**
-
-- `<sourcesystem>`: Name of the source system (e.g., `crm`, `erp`)
-- `<entity>`: Exact table name from the source system
+- All names must start with the source system name, and table names must match their original names without renaming.
+-`<sourcesystem>_<entity>`:
+-- <sourcesystem>: Name of the source system (e.g., crm, erp). 
+-- `<entity>`: Exact table name from the source system
+--  Example: crm_customer_info → Customer information from the CRM system.
 
 **Example**
 Customer information sourced directly from the CRM system.
