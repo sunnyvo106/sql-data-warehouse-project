@@ -24,7 +24,7 @@ This project involves:
 
 **Everything used in this project is free.**
 
-- [**Datasets**](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) – Project datasets provided as CSV files  
+- [**Datasets**](https://github.com/sunnyvo106/sql-data-warehouse-project/tree/main/datasets)) – Project datasets provided as CSV files  
 - [**SQL Server Express**](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) – Lightweight SQL Server for hosting your database  
 - [**SQL Server Management Studio (SSMS)**](https://learn.microsoft.com/en-us/ssms/install/install?view=sql-server-ver16) – GUI tool for managing SQL Server databases  
 - [**GitHub**]( – Version control and collaboration  
