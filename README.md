@@ -122,7 +122,6 @@ data-warehouse-project/
 │
 ├── README.md                    # Project overview
 ├── LICENSE                      # License information
-├── .gitignore                   # Git ignored files
 └── requirements.txt             # Project requirements
 ```
 
